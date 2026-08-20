@@ -1,48 +1,398 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mening Videolarim</title>
+  <title>Videos</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       background-color: #0f0f0f;
-      color: #ffffff;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
       margin: 0;
+      padding: 16px;
     }
-    .video-container {
-      width: 100%;
-      max-width: 800px;
-      margin-bottom: 30px;
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
     }
-    iframe {
+    .card {
+      background-color: #000000;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 450px;
-      border-radius: 12px;
-      border: none;
+      height: 100%;
+      border: 0;
     }
   </style>
 </head>
 <body>
 
-  <h2>Mening YouTube Videolarim</h2>
+  <div class="video-grid">
+    <!-- Avvalgi videolar -->
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TysBhkK525c" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/BRe21vStbQ8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ukWwV5peW14" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OTu6OrjSang" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uiUPD-z9DTg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/1kFV1Td2BQs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/d7KRJ1YUKFs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/RNjKfVH6XDI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/P-n18Ub8C5Q" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/1X-rr1DKSbY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/I79TpDe3t2g" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OIYy32RuHao" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/26EivpCPHnQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8qRZcXIODNU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/PBn7iWzrKoI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/eR5blcjll8o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/x-qsWTPul9Y" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3dT8Wm5oI_o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/QkHh6Y2vrHg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mzqKSewPmCM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0pu1DjsDsLU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/yB3K0Wk6sJU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Bno1m1zhIWs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ZU_SPGyn6n4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4PmGTEiq4Fo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vuDNdlRGpT8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/F1o9fbx90UU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aQSDI7sJ-Tg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/-HazLOy71Jg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/F6hFGFf-yPc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/T4oluLrYczo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Sempwv5MPMQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/m6dCxo7t_aE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xyCOvT1Y5YQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/q6JRZKArHjg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/XfGEMCb6BQU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rU6DORQU--k" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/KUERUnx2lms" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/RlKJDwViNKs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rbCQKODKv1o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8JiyJejo-e0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8Z9FQxcCAZ0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0ADvC4ioqe4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/6xbvCJcjzFY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/twMvQ64jom8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lrBRV3WK2x4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/dPUVlVmwHc0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lwexLt9k0ac" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rQ0EKiCt6H8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YMZcp0EQO2s" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ZAqIoDhornk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/bzatw32j-i4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/m19F4IHTVGc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GD3dgiDreGc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/wUVvTqvjUaM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/jiakD6Pm9eE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xTGbsCSqoiw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TjPFZaMe2yw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/idrbwnWLJ7w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/_GI9-J-sE5k" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zIwLWfaAg-8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/5iTOphGnCtg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/EzxTGeJMC9w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ba-HMvDn_vU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/r-98YRAF1dY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zarll9bx6FI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/E9VfahNloQA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/MiUHjLxm3V0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/f2O6mQkFiiw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/cbiyPOn-__M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/i30jbbk7yoQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YYZCpJmHAqI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ibjUpk9Iagk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8NS4CbBJQ84" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/7K3KdgDcdYc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/issEot6c0d0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/QKae1k1BDdA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/w0Wmc8C0Eq0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3NXC4Q_4JVg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/6OV3tmt9uhs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/eDqVqVyCo6k" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/iqRcGCah0Kw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/reDRM0tqhNs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/6C14E9sQ_-w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lz9bQm3nZIM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/gh2_PhgZGsM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4m9j6hlbf4g" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/k-yDYgc8AmU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/brLhhkUqcn4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/fQbBPa0ADvs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ug8W0sFiVJo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/gmuTjeQUbTM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/D5F8kp_azzw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/DzVm161M4Kk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/dSIVVX0vAsY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/r36xQmTJe1c" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mAFoROnOfHs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/G9JxuWk7BDA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/KOutPbKc9UM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ZK6XWSCCgPQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/9HOpanT0GRs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3Kq1MIfTWCE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uIkxsBgkpj8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2_lswM1S264" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lZAoFs75_cs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TbMKwl11itQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rO8-cgtkZSw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/S6S5JF6Gou0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/47NRaBVxgVM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/yK1uBHPdp30" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/wNuRKyMJRQk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/RpLnQnurpLY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GjeLXYIoZzQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/k7aQEqDbuf8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/sia9oFoZilI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/hBMoPUAeLnY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/QM6P5HjyDqU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4HgaGCmKaDQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/IgWlhlZaYkA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/7ORS6-Q1Gm4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/-siyztg0mlM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/_EjeWOLddgs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OspOpEL2vAc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/XvZ4Jj7mAEI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/MVaEkI7wj-4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uADlxIVhwPo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ez_BfbNGUts" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/JKo2AQ12Rgg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/oX7OduG1YmI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YV6QvaPsHdY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Jy9tNyp03M0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rThpImf31uo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/QkjVDGmlq5E" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/fzSK2gAkdD8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/jta-4JLawYI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rlPlZBbNJGs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/-47RzGcrdpY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3zruraRbpxY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/RdLDxQYiQEs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CsmuPk8ZaxU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2BmkUa4Mv60" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/1FDjhKY8HwM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Y7FUneS1mBs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mUupfHhOnHg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/cnSuZ3gkDDk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/epfQlb_Tgco" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4dXbgvm4_7g" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/K1stKN5PCx0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/BK0vW2FvPcs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Z2b-xVdmpII" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/w5De4rSAHmM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xcaUrLTPT2M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0NPI9gDrgvs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/9AUmj7kCAKY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CwjsQjntCCQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0AhbhY1hWqI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YIWUrRolUbo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/MafOjGrTgd0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2JnnSu53QS0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/J0zSzgnhIhM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/dxbVh29-NSs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YB3Q-HUOxJE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rL3hC5T7B0k" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/m1KR42qapWU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/iRbGRo5kgiw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/qoN7rRhCwCU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4vmfLIZjzbk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YyevVZ9pauc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/jx6AC6VOZqM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/KWedI_kMwVw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CwhgquSdo6E" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xsA_VTgtCVY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/6yfN_fyza8M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uSF3_sY6tIc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/1hPX-UFd-XQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/p0rfEyULdtQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8Oo6sKAI2oY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/qwtabciciLg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3NUZkOBwBOo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3yrtsZDSZGQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/B7W0ZFYtms0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aXB3isDeOHE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/UA3f2YosURw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CLT3Vm18R38" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rAp9b8s7xPY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/_qA0rQCV1kM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/g37eDSXO0DQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mMY1RTcXB1w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/y5kl9MU1urc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aQjre_w94LE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4iPbxnNZdnQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uUitSnzGaHY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ESBx-NBXK0c" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/82zgDdMuLYA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/DIb0N05XpXM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rjETn25MuDc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/oEdkZIU8n0g" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3vonq-Duaw4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GC8sVqk1J8c" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CGMIwhmxp7s" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/sZqdYTCWSEQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TkP7Y1WHV2Y" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/gyFQqppEMYk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mO7J-b8vi54" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/qr1MADc0E2M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zWlm8s_WQQo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lbiHszkDcVA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/NjisEndEE9Q" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/85Q_vkLhFIA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/WxmEQsI_epM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8YlAyaU1J2M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/gUBjwlSe4O4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/RgcQHwvo_wg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/51gEpOohis0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/B-gYfix0iAY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/w693r5DHYnI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aANEvqI7bhk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/z_3fTXuY-TI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Qvba0DREM-s" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/spITeJ_M0Sw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ai6l7z3xrcw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Gj3wEsT8vEc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Y75P4hNwQpM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/yCyz0DuafPI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/_OQtB9bXElQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zYxG9M-F9H4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/AMSelaQyHyo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/bvxAkjfTAYg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/qiEXPEzp0Ao" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Zt61eU5Wqs4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CdFZY9lvr2I" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/q4VJVnvegx8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Cz4CF0j02VU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Pm7z7bAz3x8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/W-yTLUfKydQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lpHfVBpjYpc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uJ1ZZBc1Ztw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/UtbOPLZS37M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/T3cAUHCtd60" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/b_lMFXn43eQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/KPWJp8TRooU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/QmWR75a6zRM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/62BJ5CBOLIw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rPHmw0C_xBE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/4qlD7UW0jQY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/p4v5zVWr0uk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/WTAd2AOfTWo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/gftHWQ6CLu8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/NSppwImoW6w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/odJwJQGdxBI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/kHNKmaZ3N80" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OhZ-YG7SYRI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3KaYtW-MjPQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/dJvxnoRYII4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/SJOnhWiJArM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3MHvhZI6S_Q" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Qomnr1EoqT4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/e_laL0Dk5yc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/adgx_K-PFWo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2fn1BUgOhS4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/JmRXMKwLegg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Vq99rxftBWQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3-ShfqYHsaA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GyorGDeYUIg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2u97XZhoaA0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vdA3iugoXOA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xFFs9UgOAlE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/FylHa4_neOA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/D6nvyilkTF0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/IA2jZAA7JjM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rSeLQtpfJvs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/8qNYkYfQKZw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/BNLHwHaocqs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/SceDmiBEESI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/sN5H7YTo_IQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/9xkEHTqgr7o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/VHP0T_CKlSg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Emf1sstnzgM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/z1PauShJx8c" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2wnlTMrpe8M" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/X2C8bMztpKI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/fm2m4CHEWnc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/PgNeK6uffAo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/r6tEbbZ630w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/mZI2GQlNdJA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0O2Rq4HJBxw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0oykYip2vus" allowfullscreen></iframe></div></div>
 
-  <!-- 1-video -->
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/TysBhkK525c" allowfullscreen></iframe>
+    <!-- Yangi qo'shilgan va dublikati olib tashlangan videolar -->
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/HfACrKJ_Y2w" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/iNyUmbmQQZg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CqgmozFr_GM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/wLn28DrSF68" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/HAnw168huqA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/NOAgplgTxfc" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ApUFtLCrU90" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lklAoRQdK44" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ymsE2MkuoME" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YjMj3IDYo8I" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/DsFrgeWhtIk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ukPayEU3Xok" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/iMWESKCWKtw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/woUtyRJhfyU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CkjFj6AlulE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3yLySgzVf1o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/5ORuc0XFW94" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/eC4PEqsZ3gI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Zf0PAxDfaCg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/tFRaESIyaZ8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OzmEel3AQCI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/k9-sn_Aeqts" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/XaPjYGoKrzE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Mt59hMEdmbI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/bRjxQEzordQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/9Vk4tlYgNlk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/W1YNVWqPMZg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Nn_YUsasW8o" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/cTl_LRBHOwM" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/d1k7klc4AGU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lplpUkQ6Kjs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/SuQDO1vgJuw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zqDJYN5qppQ" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OjMe9MKHo8Q" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/nARHzFjwFwo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xf4Amwpio9I" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/VeUl4vOGksA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lKKjr99p2Vk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/UC9P1w0DwQs" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/E2V6FWJ6LZ0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/oWPP7h6aHhw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/LKnoNBZLpMw" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lLrdq1H7wCU" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xhle7GfMJzA" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/nUdEkZKhlC0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0LTABWf1Ib0" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/7eXrB2p11Mo" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/uJYiqsvhX30" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/pXO4ZNdymr4" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/coGWcqAiZYE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/Ws0-vDbr5yg" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/fgGon2VhorE" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aYTt2ADJbb8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/-ODJDSoSyac" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/DvN3Jxn-dA8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/OQjKeDfEuok" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/AqbxmQ303gI" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/neh-jfV7dzY" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/VwfQ48tySXk" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/bm00cSaToA8" allowfullscreen></iframe></div></div>
+    <div class="card"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TW6t9ihU68w" allowfullscreen></iframe></div></div>
   </div>
-
-  <!-- 2-video (kerak bo'lsa ko'paytirishingiz mumkin) -->
-  <!-- 
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-  </div> 
-  -->
 
 </body>
 </html>
